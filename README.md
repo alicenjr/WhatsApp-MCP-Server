@@ -270,40 +270,6 @@ get_recent_messages(
 )
 ```
 
-#### 3. `get_conversation()`
-
-Get a normalized conversation view with role detection.
-
-```python
-get_conversation(
-    to: str = None,            # Phone number or WhatsApp ID
-    chatId: str = None,        # WhatsApp chat ID
-    limit: int = 10            # Number of messages (1-50)
-)
-```
-
-**Returns:**
-```python
-{
-    "ok": True,
-    "chatId": "15551234567@c.us",
-    "conversation": [
-        {
-            "role": "them",
-            "text": "Hey, how are you?",
-            "timestamp": 1234567890,
-            "fromMe": False
-        },
-        {
-            "role": "me",
-            "text": "I'm good, thanks!",
-            "timestamp": 1234567891,
-            "fromMe": True
-        }
-    ]
-}
-```
-
 ---
 
 ## 🖥️ Claude Desktop Integration
